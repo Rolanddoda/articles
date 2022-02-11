@@ -4,6 +4,16 @@ By reading this post, you will learn how to add SVG icons from Figma, using and 
 
 ![Image from ray.so https://ray.so/?title=html&theme=breeze&spacing=64&background=true&darkMode=true&code=PFN2Z0ljb24gCiAgbmFtZT0iYXJyb3ciCiAgY29sb3I9ImJsdWUiCiAgc2l6ZT0ibWQiCiAgaG92ZXItY29sb3I9IndoaXRlIgogIHRyYW5zZm9ybT0icm90YXRlKDQ1KSIKLz4&language=xml](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/id83fdn6y98xy2cbseuj.png)
 
+
+
+### Interactive demo
+
+For this article, I have made a project using [Vue.js 3](https://vuejs.org), [Vite](https://vitejs.dev), [Quasar](https://quasar.dev) and connected the repo to [Stackblitz](https://stackblitz.com) where you can play with Controls to generate the code for the `svg-icon` component!
+
+- See it live: [here](https://vbwippnrg--github--3000.local.webcontainer.io)
+- Play with the code: [here](https://stackblitz.com/github/Rolanddoda/unified-way-of-using-svg-icons?file=src%2Fcomponents%2FSvgIcon.vue)
+- Star the repo on Github: [here](https://github.com/Rolanddoda/unified-way-of-using-svg-icons)
+
 ### Introduction
 
 Nowadays, in most cases, we end up using icon sets like Material design icons, FontAwesome, etc. Even though there are a lot of icon sets, and in most cases they cover all of our needs, in this article we are going to use pure SVG icons.
@@ -449,6 +459,13 @@ The result is:
 
 ![image](https://user-images.githubusercontent.com/18482346/153548293-d3becb8c-b863-4769-87c4-a73e24db1132.png)
 
-Amazing isn't it ? 😎😎
+Amazing, isn't it? 😎😎
 
 **Now with a single component, we can easily and in a powerful way use and customize SVG icons!**
+
+
+
+**Thank you for reading, I hope you learned something from this article.**
+
+Follow me on [Linkedin](https://www.linkedin.com/in/roland-doda/)
+Follow me on [Github](https://github.com/Rolanddoda)
