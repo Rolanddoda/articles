@@ -3,17 +3,17 @@
 In this article, we will:
 
 - use custom SVG icons from Figma
-- build a flexible and customizable reusable component to use SVG icons:
-  ![Image from ray.so https://ray.so/?title=html&theme=breeze&spacing=64&background=true&darkMode=true&code=PFN2Z0ljb24gCiAgbmFtZT0iYXJyb3ciCiAgY29sb3I9ImJsdWUiCiAgc2l6ZT0ibWQiCiAgaG92ZXItY29sb3I9IndoaXRlIgogIHRyYW5zZm9ybT0icm90YXRlKDQ1KSIKLz4&language=xml](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/id83fdn6y98xy2cbseuj.png)
+- build a flexible and customizable reusable component to use SVG icons
 - create an interactive playground to play with the SvgIcon component and generate the code
 - use [Vite](https://vitejs.dev), [Vue 3](https://vuejs.org), [Quasar](https://quasar.dev) and [Pinia](https://pinia.vuejs.org)
-- use script setup and options API with Vue 3
-- auto-register global components using `import.meta.glob`
+- use both [Composition API](https://vuejs.org/api/composition-api-setup.html#composition-api-setup) with [script setup](https://vuejs.org/api/sfc-script-setup.html#script-setup) and [Options API](https://vuejs.org/api/options-state.html) with Vue 3
+- Use built-in component: [Suspense](https://vuejs.org/guide/built-ins/suspense.html#suspense) *(Note: it's still an experimental feature)*
+- auto-register global components using `import.meta.glob` and `import.meta.globEager`
 - add responsive design with CSS Grid
 - add CSS Gradient rounded borders
 - link CSS values to dynamic component state using `v-bind` CSS function
 
-> Wait😲! All of these in a single article ?
+> Wait😲! All of these in an article ?
 
 YES! Let's do it! 🤹‍♂️
 
@@ -351,4 +351,4 @@ import './plugins/global-components' // +
 
 app.mount('#app')
 ```
-
+*See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3)* or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3).*
