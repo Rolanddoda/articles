@@ -16,7 +16,7 @@ YES! Let's do it! 🤹‍♂️
 ### What are we going to build:
 
 - [Click here to see the app what we are going to build](https://stupefied-montalcini-342150.netlify.app)
-- [Play with the code online on Stackblitz](https://stackblitz.com/github/Rolanddoda/unified-way-of-using-svg-icons?file=src%2FApp.vue) (you might have to run `vite` in the terminal to run the app)
+- [Play with the code online on Stackblitz](https://stackblitz.com/github/Rolanddoda/unified-way-of-using-svg-icons?file=src%2FApp.vue&terminal=vite) (you might have to run `vite` in the terminal to run the app)
 
 ### Requirements
 
@@ -285,7 +285,7 @@ Greatness! Here are some simple examples of using the component we just created:
 <svg-icon name="home" size="sm" color="blue" hoverColor="var:primary" />
 ```
 
-*See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-2)* or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-2).*
+*See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-2) or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-2).*
 
 ### Auto-register components
 
@@ -351,7 +351,7 @@ Now we can use the `<svg-icon>` component everywhere in our app without the need
 Now it's time to start building our interactive playground. 🔥🔥
 
 
-*See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3)* or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3).*
+*See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3) or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3).*
 
 ### Create and use Pinia store 🏪
 
@@ -432,7 +432,7 @@ const globalStore = useGlobalStore()
 </style>
 ```
 
-*See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3)* or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3).*
+*See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3) or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3).*
 
 ### Next steps
 
@@ -441,8 +441,14 @@ The article became a bit long, so let's build the interactive playground in the 
 - Use built-in component: [Suspense](https://vuejs.org/guide/built-ins/suspense.html#suspense)
 - create an interactive playground to play with the SvgIcon component 
 - highlight and generate the code using `Highlight.js`
-- add responsive design with CSS Grid
+- add responsive design with CSS Grid & Quasar
 - add CSS Gradient rounded borders
 - More usage of Quasar, Pinia and Composition API with script setup
 
 
+### About me
+
+My name is Roland Doda (Feel free to connect with me on [Linkedin](https://www.linkedin.com/in/roland-doda/) or follow me on [Github](https://github.com/Rolanddoda), [Dev.to](https://dev.to/rolanddoda), [Hashnode](https://hashnode.com/@the-one) or [Twitter](https://twitter.com/Roli_Dori)) and I work as a Senior Frontend Developer at [CPI technologies](https://cpitech.io).
+We are also hiring btw! Check out [CPI Career Center](https://cpitechnologiesgmbh.recruitee.com) and also [VueJS Frontend Developer job description](https://cpitechnologiesgmbh.recruitee.com/o/vuejs-frontend-developer-mainz).
+
+Thanks for reading, I hope you enjoyed it!
