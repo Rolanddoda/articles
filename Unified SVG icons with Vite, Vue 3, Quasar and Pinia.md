@@ -17,6 +17,7 @@ YES! Let's do it! 🤹‍♂️
 
 - [Click here to see the app what we are going to build](https://stupefied-montalcini-342150.netlify.app)
 - [Play with the code online on Stackblitz](https://stackblitz.com/github/Rolanddoda/unified-way-of-using-svg-icons?file=src%2FApp.vue&terminal=vite) (you might have to run `vite` in the terminal to run the app)
+- [Repo with each lesson in a branch](https://github.com/Rolanddoda/svg-icons-interactive-playground)
 
 ### Requirements
 
