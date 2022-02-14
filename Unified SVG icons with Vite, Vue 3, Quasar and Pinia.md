@@ -2,15 +2,11 @@
 
 In this article, we will:
 
-- use custom SVG icons from Figma
+- use custom SVG icons
 - build a flexible and customizable reusable component to use SVG icons
-- create an interactive playground to play with the SvgIcon component and generate the code
 - use [Vite](https://vitejs.dev), [Vue 3](https://vuejs.org), [Quasar](https://quasar.dev) and [Pinia](https://pinia.vuejs.org)
 - use both [Composition API](https://vuejs.org/api/composition-api-setup.html#composition-api-setup) with [script setup](https://vuejs.org/api/sfc-script-setup.html#script-setup) and [Options API](https://vuejs.org/api/options-state.html) with Vue 3
-- Use built-in component: [Suspense](https://vuejs.org/guide/built-ins/suspense.html#suspense) *(Note: it's still an experimental feature)*
 - auto-register global components using `import.meta.glob` and `import.meta.globEager`
-- add responsive design with CSS Grid
-- add CSS Gradient rounded borders
 - link CSS values to dynamic component state using `v-bind` CSS function
 
 > Wait😲! All of these in an article ?
@@ -351,4 +347,102 @@ import './plugins/global-components' // +
 
 app.mount('#app')
 ```
+Now we can use the `<svg-icon>` component everywhere in our app without the need to import it.
+Now it's time to start building our interactive playground. 🔥🔥
+
+
 *See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3)* or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3).*
+
+### Create and use Pinia store 🏪
+
+The first step on building the interactive playground, is to create a global store so all our components can interact with it.
+So let' go and create a `global-store.js` file in `src/stores` folder:
+
+```js
+import { reactive, ref } from 'vue'
+import { defineStore } from 'pinia'
+
+export const useGlobalStore = defineStore('global-store', () => {
+  const availableIcons = ['user', 'search', 'home']
+  const selectedIcon = ref(availableIcons[0])
+
+  const color = ref()
+
+  const hasHoverColor = ref(false)
+  const hoverColor = ref()
+
+  const availableSizes = ['sm', 'md', 'lg', 'xl']
+  const selectedSize = ref(availableSizes[3])
+
+  const cssVarColors = reactive({
+    primary: '#007bff',
+    secondary: '#6c757d',
+    positive: '#28a745',
+    negative: '#dc3545',
+    info: '#17a2b8',
+    warning: '#ffc107'
+  })
+
+  return {
+    availableIcons,
+    selectedIcon,
+    color,
+    hasHoverColor,
+    hoverColor,
+    availableSizes,
+    selectedSize,
+    cssVarColors
+  }
+})
+```
+Great! We have created a [Pinia](https://pinia.vuejs.org) store 🍍! That was simple right?
+
+Now, let's use this store in `App.vue` to bind `cssVarColors` to Quasar CSS variables. We will use Composition API with `script setup` for `App.vue` and finally use `SvgIcon.vue` component:
+
+```vue
+<script setup>
+import { useGlobalStore } from '@/stores/global-store'
+
+const globalStore = useGlobalStore()
+</script>
+
+<template>
+  <header>
+    <div class="gradient-font q-my-sm">Unified way of using SVG Icons</div>
+  </header>
+
+  <main class="">
+    <svg-icon name="user" />
+  </main>
+</template>
+
+<style lang="scss">
+@import 'css/base';
+
+.main {
+  --q-primary: v-bind('globalStore.cssVarColors.primary');
+  --q-secondary: v-bind('globalStore.cssVarColors.secondary');
+  --q-positive: v-bind('globalStore.cssVarColors.positive');
+  --q-negative: v-bind('globalStore.cssVarColors.negative');
+  --q-info: v-bind('globalStore.cssVarColors.info');
+  --q-warning: v-bind('globalStore.cssVarColors.warning');
+
+  width: 100%;
+}
+</style>
+```
+
+*See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3)* or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3).*
+
+### Next steps
+
+The article became a bit long, so let's build the interactive playground in the next article where we will:
+
+- Use built-in component: [Suspense](https://vuejs.org/guide/built-ins/suspense.html#suspense)
+- create an interactive playground to play with the SvgIcon component 
+- highlight and generate the code using `Highlight.js`
+- add responsive design with CSS Grid
+- add CSS Gradient rounded borders
+- More usage of Quasar, Pinia and Composition API with script setup
+
+
