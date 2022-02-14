@@ -447,9 +447,8 @@ The article became a bit long, so let's build the interactive playground in the 
 - More usage of Quasar, Pinia and Composition API with script setup
 
 
-### About me
+If you liked this article, you can show your support by buying me a  coffee. It would motivate me a lot.
 
-My name is Roland Doda (Feel free to connect with me on [Linkedin](https://www.linkedin.com/in/roland-doda/) or follow me on [Github](https://github.com/Rolanddoda), [Dev.to](https://dev.to/rolanddoda), [Hashnode](https://hashnode.com/@the-one) or [Twitter](https://twitter.com/Roli_Dori)) and I work as a Senior Frontend Developer at [CPI technologies](https://cpitech.io).
-We are also hiring btw! Check out [CPI Career Center](https://cpitechnologiesgmbh.recruitee.com) and also [VueJS Frontend Developer job description](https://cpitechnologiesgmbh.recruitee.com/o/vuejs-frontend-developer-mainz).
+<a href="https://www.buymeacoffee.com/rolanddoda" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 Thanks for reading, I hope you enjoyed it!
