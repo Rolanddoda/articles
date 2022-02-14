@@ -17,10 +17,10 @@ In this article, we will:
 
 YES! Let's do it! 🤹‍♂️
 
-First, let's see what we are going to build:
+### What are we going to build:
 
-- [See the app live]([Click here to see live what we are going to build](https://stupefied-montalcini-342150.netlify.app))
-- [Play with the code online](https://stackblitz.com/github/Rolanddoda/unified-way-of-using-svg-icons?file=src%2FApp.vue) (you might have to run `vite` in the terminal to run the app)
+- [Click here to see the app what we are going to build](https://stupefied-montalcini-342150.netlify.app)
+- [Play with the code online on Stackblitz](https://stackblitz.com/github/Rolanddoda/unified-way-of-using-svg-icons?file=src%2FApp.vue) (you might have to run `vite` in the terminal to run the app)
 
 ### Requirements
 
