@@ -16,7 +16,7 @@ YES! Let's do it! 🤹‍♂️
 ### What are we going to build:
 
 - [Click here to see the app what we are going to build](https://stupefied-montalcini-342150.netlify.app)
-- [Play with the code online on Stackblitz](https://stackblitz.com/github/Rolanddoda/unified-way-of-using-svg-icons?file=src%2FApp.vue&terminal=vite) (you might have to run `vite` in the terminal to run the app)
+- [Play with the code online on Stackblitz](https://stackblitz.com/github/Rolanddoda/unified-way-of-using-svg-icons?file=src%2FApp.vue&terminal=dev) (you might have to run `vite` in the terminal to run the app)
 - [Repo with each lesson in a branch](https://github.com/Rolanddoda/svg-icons-interactive-playground)
 
 ### Requirements
@@ -55,7 +55,7 @@ Alright! As you can see, we need a flexible and customizable reusable component.
 
 We could start by creating a new Vite + Vue 3 project which you can do by running `npm init vue@latest` in the terminal, but to speed things up, I have already done that, cleaned up the project and added some SVG icons.
 
-So, [clone or download the repo](https://github.com/Rolanddoda/svg-icons-interactive-playground) or play directly with the code online [on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground).
+So, [clone or download the repo](https://github.com/Rolanddoda/svg-icons-interactive-playground) or play directly with the code online [on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground?terminal=dev).
 
 As you can see, we have a clean Vite + Vue 3 app and some SVG icons in `src/components/icons` folder.
 The next step, is to install Quasar and Pinia. Before doing so, I loved how in Vue 2 we could keep `main.js` file clean and simple, so we are going to do exactly that!
@@ -125,7 +125,7 @@ import './plugins/pinia' // +
 app.mount('#app')
 ```
 
-*If something doesn't work on your end, see the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-1) or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-1)*
+*If something doesn't work on your end, see the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-1) or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-1?terminal=dev)*
 
 ### Create reusable component for SVG icons
 
@@ -286,7 +286,7 @@ Greatness! Here are some simple examples of using the component we just created:
 <svg-icon name="home" size="sm" color="blue" hoverColor="var:primary" />
 ```
 
-*See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-2) or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-2).*
+*See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-2) or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-2?terminal=dev).*
 
 ### Auto-register components
 
@@ -352,7 +352,7 @@ Now we can use the `<svg-icon>` component everywhere in our app without the need
 Now it's time to start building our interactive playground. 🔥🔥
 
 
-*See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3) or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3).*
+*See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3) or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3?terminal=dev).*
 
 ### Create and use Pinia store 🏪
 
@@ -433,7 +433,7 @@ const globalStore = useGlobalStore()
 </style>
 ```
 
-*See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3) or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-3).*
+*See the working code [here on Github](https://github.com/Rolanddoda/svg-icons-interactive-playground/tree/lesson-4) or [online on Stackblitz](https://stackblitz.com/github/Rolanddoda/svg-icons-interactive-playground/tree/lesson-4?terminal=dev).*
 
 ### Next steps
 
